@@ -5,9 +5,9 @@
 
 {% block content %}
 	<br>
-	<div class="row col-4">
+	<div class="row">
 	{% for car in cars %}
-		<a href="{{car.get_absolute_url}}">
+		<a href="{{car.get_absolute_url}}" class="col-4">
 			<div class="card" style="width: 20rem;">
 				{% if car.img %}
 					<img src="{{car.img.url}}" class="card-img-top">
